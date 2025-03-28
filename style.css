@@ -1,4 +1,4 @@
-/* General body styles */
+
 libraryUsers {
     font-family: Arial, sans-serif;
     text-align: center;
@@ -49,8 +49,8 @@ libraryUsers {
   
   student-info {
     display: flex;
-    flex-direction: column; /* Stack text vertically */
-    margin-top: 20px; /* Space below the profile picture */
+    flex-direction: column; 
+    margin-top: 20px; 
   }
   
   name, course, year_level_section, adviser, school_year {
