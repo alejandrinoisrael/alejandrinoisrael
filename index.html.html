@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Users</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin: 10px 0;
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        .students-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2px;
+            justify-content: center;
+        }
+
+        .student-card {
+            border: 3px solid #ccc;
+            width: 250px;
+            padding: 10px;
+            box-sizing: border-box;
+            background-color: #f9f9f9;
+            position: relative;
+            text-align: left;
+        }
+
+        .student-card img {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+        .student-info p {
+            margin: 5px 0;
+            line-height: 1.4;
+        }
+    </style>
+</head>
+<body>
+    <h1>Abydos College</h1>
+    <h2>Library Users</h2>
+    <div class="students-container" id="students-container"></div>
+
+    <script>
+        // Fetch and extract data from the XML file
+        fetch('israel_alejandrino.xml')
+            .then(response => response.text())
+            .then(data => {
+                const parser = new DOMParser();
+                const xmlDoc = parser.parseFromString(data, "application/xml");
+                const students = xmlDoc.getElementsByTagName("student");
+                const container = document.getElementById("students-container");
+
+                for (let i = 0; i < students.length; i++) {
+                    const name = students[i].getElementsByTagName("name")[0].textContent;
+                    const course = students[i].getElementsByTagName("course")[0].textContent;
+                    const yearLevelSection = students[i].getElementsByTagName("yearLevelSection")[0].textContent;
+                    const adviser = students[i].getElementsByTagName("adviser")[0].textContent;
+                    const schoolYear = students[i].getElementsByTagName("schoolYear")[0].textContent;
+                    const image = students[i].getElementsByTagName("image")[0].textContent;
+
+                    const studentCard = `
+                        <div class="student-card">
+                            <img src="${image}" alt="${name}">
+                            <div class="student-info">
+                                <p><strong>Name:</strong> ${name}</p>
+                                <p><strong>Course:</strong> ${course}</p>
+                                <p><strong>Year Level / Section:</strong> ${yearLevelSection}</p>
+                                <p><strong>Adviser:</strong> ${adviser}</p>
+                                <p><strong>School Year:</strong> ${schoolYear}</p>
+                            </div>
+                        </div>
+                    `;
+
+                    container.innerHTML += studentCard;
+                }
+            })
+            .catch(error => console.error("Error loading XML file:", error));
+    </script>
+</body>
+</html>

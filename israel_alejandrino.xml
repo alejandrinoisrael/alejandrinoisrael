@@ -1,0 +1,88 @@
+
+<?xml-stylesheet type="text/css" href="style.css"?>
+<libraryUsers>
+<title>Abydos Highschool</title>
+  <subtitle>Library users</subtitle>
+<students>
+   <student>
+       <name>Arona</name>
+        <course>BSIT</course>
+        <yearLevelSection>3BG2</yearLevelSection>
+        <adviser>Ms. Hoshino</adviser>
+        <schoolYear>2025-2026</schoolYear>
+        <image>images/arona.jpg</image>
+    </student>
+    <student>
+        <name>Shiroko Sunaokami</name>
+        <course>BSIT</course>
+        <yearLevelSection>3BG2</yearLevelSection>
+        <adviser>Ms. Sunaokami</adviser>
+        <schoolYear>2025-2026</schoolYear>
+        <image>images/shiroko.png</image>
+    </student>
+    <student>
+        <name>Hoshino Takanashi</name>
+        <course>BSIT</course>
+        <yearLevelSection>3BG2</yearLevelSection>
+        <adviser>Mr. Arona</adviser>
+        <schoolYear>2025-2026</schoolYear>
+        <image>images/hoshino.jpeg</image>
+    </student>
+    <student>
+        <name>Izuna Kuda</name>
+        <course>BSIT</course>
+        <yearLevelSection>3BG2</yearLevelSection>
+        <adviser>Ms. Takanashi</adviser>
+        <schoolYear>2025-2026</schoolYear>
+        <image>images/izuna.jpg</image>
+    </student>
+    <student>
+        <name>Azusa Nakano</name>
+        <course>BSIT</course>
+        <yearLevelSection>3BG2</yearLevelSection>
+        <adviser>Mr. Kuda</adviser>
+        <schoolYear>2025-2026</schoolYear>
+        <image>images/azusa.jpeg</image>
+    </student>
+    <student>
+        <name>Karin Kakudate</name>
+        <course>BSIT</course>
+        <yearLevelSection>3BG2</yearLevelSection>
+        <adviser>Ms. Hoshino</adviser>
+        <schoolYear>2025-2026</schoolYear>
+        <image>images/karin.jpeg</image>
+    </student>
+    <student>
+        <name>Hifumi Izanami</name>
+        <course>BSIT</course>
+        <yearLevelSection>3BG2</yearLevelSection>
+        <adviser>Mr. Nakano</adviser>
+        <schoolYear>2025-2026</schoolYear>
+        <image>images/hifumi.jpg</image>
+    </student>
+    <student>
+        <name>Mutsuki Tsurugi</name>
+        <course>BSIT</course>
+        <yearLevelSection>3BG2</yearLevelSection>
+        <adviser>Ms. Kakudate</adviser>
+        <schoolYear>2025-2026</schoolYear>
+        <image>images/mutsuki.jpeg</image>
+    </student>
+    <student>
+        <name>Haruna Naito</name>
+        <course>BSIT</course>
+        <yearLevelSection>3BG2</yearLevelSection>
+        <adviser>Mr. Tsurugi</adviser>
+        <schoolYear>2025-2026</schoolYear>
+        <image>images/haruna.jpeg</image>
+    </student>
+    <student>
+        <name>Nonomi Izumimoto</name>
+        <course>BSIT</course>
+        <yearLevelSection>3BG2</yearLevelSection>
+        <adviser>Ms. Arona</adviser>
+        <schoolYear>2025-2026</schoolYear>
+        <image>images/nonomi.jpeg</image>
+    </student>
+    </students>
+</libraryUsers>
